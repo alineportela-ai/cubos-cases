@@ -205,9 +205,10 @@ body {
   gap: 2px;
 }
 .feature {
-  padding: 32px;
-  background: rgba(255,255,255,0.03);
-  border: 0.5px solid rgba(255,255,255,0.07);
+  padding: 36px 32px 32px;
+  background: rgba(255,255,255,0.04);
+  border: 0.5px solid rgba(255,255,255,0.1);
+  border-top: 2px solid #00C0FF;
   transition: background 0.2s;
 }
 .feature:hover { background: rgba(255,255,255,0.055); }
@@ -215,22 +216,24 @@ body {
   font-family: 'Fraunces', Georgia, serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 48px;
   color: #00C0FF;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   display: block;
+  line-height: 1;
+  opacity: 0.7;
 }
 .feature-title {
   font-family: 'Manrope', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .feature-desc {
-  font-size: 14px;
-  color: rgba(255,255,255,0.5);
-  line-height: 1.65;
+  font-size: 15px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
   font-weight: 300;
 }
 
@@ -597,7 +600,7 @@ body {
 <div id="page-zig" class="page">
 
   <div class="hero">
-    <div class="hero-bg" style="background-image:url('https://cubos.io/_astro/intelligent-automations.D_aBx3jC_ZMtSVm.png')"></div>
+    <div class="hero-bg" style="background-image:url('https://cdn.prod.website-files.com/68262a40287581d356856ba7/68347635654a22eea19ca650_imagem-B2C-e-B2B-1.webp');background-position:top center"></div>
     <div class="hero-overlay"></div>
     <svg class="hero-topo" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
       <g class="topo-g3" fill="none" stroke="#00C0FF" stroke-width="0.8">
@@ -609,10 +612,10 @@ body {
       </g>
     </svg>
     <div class="hero-content">
-      <img class="hero-logo" src="https://cubos.io/_astro/Zig.UrbRMbtc_Z29SET9.png" alt="Zig">
-      <span class="hero-metric">R$ 1,06 mi</span>
-      <span class="hero-unit">no primeiro mês após o relançamento</span>
-      <p class="hero-tag">De produto parado a R$ 2 milhões mensais em volume transacionado.</p>
+      <img class="hero-logo" src="https://cubos.io/_astro/Zig.UrbRMbtc_Z29SET9.png" alt="Zig" style="height:52px;margin-bottom:40px">
+      <span class="hero-metric" style="font-size:clamp(56px,7.5vw,112px)">R$ 1,06 mi</span>
+      <span class="hero-unit" style="font-size:clamp(26px,3.5vw,48px);color:rgba(255,255,255,0.88);margin-bottom:28px">faturado no primeiro mês</span>
+      <p class="hero-tag" style="font-size:clamp(20px,2.2vw,28px);color:rgba(255,255,255,0.8);max-width:800px;line-height:1.5;font-weight:300">De produto parado a mais de R$ 2 milhões mensais em volume transacionado.</p>
     </div>
     <div class="hero-scroll">
       <div class="scroll-line"></div>
