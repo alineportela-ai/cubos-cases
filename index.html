@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cubos — Cases</title>
+<title>Cubos â Cases</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,200;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root { color-scheme: dark; }
@@ -18,7 +18,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ── NAV ───────────────────────── */
+/* ââ NAV âââââââââââââââââââââââââ */
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -46,7 +46,7 @@ body {
 }
 .nav-back:hover { color: #fff; }
 
-/* ── HERO ──────────────────────── */
+/* ââ HERO ââââââââââââââââââââââââ */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -151,7 +151,7 @@ body {
   100% { top: 100%; }
 }
 
-/* ── SECTIONS ──────────────────── */
+/* ââ SECTIONS ââââââââââââââââââââ */
 .section {
   padding: 100px 72px;
   max-width: 1200px;
@@ -197,7 +197,7 @@ body {
 }
 .section-body p + p { margin-top: 20px; }
 
-/* ── FEATURES ──────────────────── */
+/* ââ FEATURES ââââââââââââââââââââ */
 .features {
   margin-top: 56px;
   display: grid;
@@ -237,7 +237,7 @@ body {
   font-weight: 300;
 }
 
-/* ── RESULTS ───────────────────── */
+/* ââ RESULTS âââââââââââââââââââââ */
 .results-section {
   background: rgba(255,255,255,0.02);
   border-top: 0.5px solid rgba(255,255,255,0.07);
@@ -283,7 +283,7 @@ body {
   line-height: 1.6;
 }
 
-/* ── DEPOIMENTO ────────────────── */
+/* ââ DEPOIMENTO ââââââââââââââââââ */
 .quote-section {
   padding: 100px 72px;
   max-width: 1200px;
@@ -328,7 +328,7 @@ body {
   font-weight: 300;
 }
 
-/* ── O QUE FICA ─────────────────── */
+/* ââ O QUE FICA âââââââââââââââââââ */
 .closing-section {
   padding: 100px 72px;
   border-top: 0.5px solid rgba(255,255,255,0.07);
@@ -344,7 +344,7 @@ body {
   max-width: 720px;
 }
 
-/* ── NEXT CASE ──────────────────── */
+/* ââ NEXT CASE ââââââââââââââââââââ */
 .next-section {
   padding: 72px;
   display: flex;
@@ -378,7 +378,7 @@ body {
   cursor: pointer;
 }
 
-/* ── TOPO ANIMATIONS ───────────── */
+/* ââ TOPO ANIMATIONS âââââââââââââ */
 @keyframes topoFlow {
   0%   { stroke-dashoffset: 0; }
   100% { stroke-dashoffset: -800; }
@@ -433,7 +433,7 @@ body {
   animation: topoFlow 35s linear infinite reverse;
 }
 
-/* ── FADE IN ──────────────────── */
+/* ââ FADE IN ââââââââââââââââââââ */
 .fade-in {
   opacity: 0;
   transform: translateY(32px);
@@ -448,11 +448,11 @@ body {
 .fade-in-delay-3 { transition-delay: 0.3s; }
 .fade-in-delay-4 { transition-delay: 0.4s; }
 
-/* ── PAGES ──────────────────────── */
+/* ââ PAGES ââââââââââââââââââââââââ */
 .page { display: none; }
 .page.active { display: block; }
 
-/* ── RESPONSIVE ─────────────────── */
+/* ââ RESPONSIVE âââââââââââââââââââ */
 @media (max-width: 768px) {
   .hero { padding: 0 24px 60px; }
   .section { padding: 64px 24px; }
@@ -465,6 +465,26 @@ body {
   .features { grid-template-columns: 1fr; }
   .nav { padding: 16px 24px; }
 }
+.hero-headline {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(40px, 5.5vw, 84px);
+  color: #fff;
+  line-height: 1.1;
+  max-width: 860px;
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+  display: block;
+}
+.hero-subtitle {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: clamp(18px, 2vw, 24px);
+  color: rgba(255,255,255,0.65);
+  line-height: 1.6;
+  max-width: 660px;
+}
 </style>
 </head>
 <body>
@@ -474,12 +494,12 @@ body {
   <a class="nav-logo" href="#" onclick="showIndex()">
     <img src="https://cubos.io/cubos-brand-dark.svg" alt="Cubos">
   </a>
-  <button class="nav-back" onclick="showIndex()">← Todos os cases</button>
+  <button class="nav-back" onclick="showIndex()">â Todos os cases</button>
 </nav>
 
-<!-- ════════════════════════════════════
+<!-- ââââââââââââââââââââââââââââââââââââ
      CASE: WEWORK LATAM
-════════════════════════════════════ -->
+ââââââââââââââââââââââââââââââââââââ -->
 <div id="page-wework" class="page active">
 
   <div class="hero">
@@ -502,9 +522,8 @@ body {
     </svg>
     <div class="hero-content">
       <img class="hero-logo" src="https://cubos.io/_astro/Wework.Bjoskdrf_19KbgB.png" alt="WeWork">
-      <span class="hero-metric">R$ 250 mil</span>
-      <span class="hero-unit">/ano economizados em cartões físicos</span>
-      <p class="hero-tag">A plataforma que a Cubos e a WeWork Latam construíram juntas, adotada depois globalmente.</p>
+      <span class="hero-headline">A plataforma que a Cubos e a WeWork Latam construÃ­ram â e o mundo adotou.</span>
+      <p class="hero-subtitle">Uma plataforma de coworking que a prÃ³pria WeWork Global nÃ£o tinha.</p>
     </div>
     <div class="hero-scroll">
       <div class="scroll-line"></div>
@@ -514,31 +533,31 @@ body {
 
   <div class="section fade-in">
     <div class="section-label"><span class="label-dash"></span><span class="label-text">Contexto e desafio</span></div>
-    <h2 class="section-title">A WeWork queria crescer<br>no Brasil <em>sem construir prédios.</em></h2>
+    <h2 class="section-title">A WeWork queria crescer<br>no Brasil <em>sem construir prÃ©dios.</em></h2>
     <div class="section-body">
-      <p>2021. O modelo global da WeWork — padrão físico elevado, operação pesada — tornava inviável estar em toda parte do Brasil. A saída foi usar a marca como agregador: um único contrato B2B daria acesso a espaços de coworking parceiros em todo o país.</p>
-      <p>Para isso, precisaria de uma plataforma que ainda não existia. Um marketplace integrado ao sistema global da WeWork, com login único, pagamento em reais e controle granular de acessos por plano. Para empresas como a Petrobras, com múltiplas salas em diferentes andares, e para o usuário individual que queria reservar um espaço fora da sua cidade.</p>
+      <p>2021. O modelo global da WeWork â padrÃ£o fÃ­sico elevado, operaÃ§Ã£o pesada â tornava inviÃ¡vel estar em toda parte do Brasil. A saÃ­da foi usar a marca como agregador: um Ãºnico contrato B2B daria acesso a espaÃ§os de coworking parceiros em todo o paÃ­s.</p>
+      <p>Para isso, precisaria de uma plataforma que ainda nÃ£o existia. Um marketplace integrado ao sistema global da WeWork, com login Ãºnico, pagamento em reais e controle granular de acessos por plano. Para empresas como a Petrobras, com mÃºltiplas salas em diferentes andares, e para o usuÃ¡rio individual que queria reservar um espaÃ§o fora da sua cidade.</p>
     </div>
     <div class="features">
       <div class="feature fade-in fade-in-delay-1">
         <span class="feature-num">01</span>
-        <div class="feature-title">Cartão virtual</div>
-        <div class="feature-desc">Integração com o SDK da Origo, empresa responsável pelas fechaduras. O celular passou a funcionar como cartão. A necessidade de emissão deixou de existir.</div>
+        <div class="feature-title">CartÃ£o virtual</div>
+        <div class="feature-desc">IntegraÃ§Ã£o com o SDK da Origo, empresa responsÃ¡vel pelas fechaduras. O celular passou a funcionar como cartÃ£o. A necessidade de emissÃ£o deixou de existir.</div>
       </div>
       <div class="feature fade-in fade-in-delay-2">
         <span class="feature-num">02</span>
-        <div class="feature-title">Check-in de escritórios</div>
-        <div class="feature-desc">Empresas com times distribuídos passaram a saber quem foi ao escritório, ajustando espaços e contratos com base em dados reais. Funcionalidade que a WeWork Global ainda não tem.</div>
+        <div class="feature-title">Check-in de escritÃ³rios</div>
+        <div class="feature-desc">Empresas com times distribuÃ­dos passaram a saber quem foi ao escritÃ³rio, ajustando espaÃ§os e contratos com base em dados reais. Funcionalidade que a WeWork Global ainda nÃ£o tem.</div>
       </div>
       <div class="feature fade-in fade-in-delay-3">
         <span class="feature-num">03</span>
         <div class="feature-title">Station Marketplace</div>
-        <div class="feature-desc">Plataforma com painel admin, PWA para reservas, API de integração global e app nativo para iOS e Android. Depois estendida internacionalmente com pagamento em reais.</div>
+        <div class="feature-desc">Plataforma com painel admin, PWA para reservas, API de integraÃ§Ã£o global e app nativo para iOS e Android. Depois estendida internacionalmente com pagamento em reais.</div>
       </div>
       <div class="feature fade-in fade-in-delay-4">
         <span class="feature-num">04</span>
-        <div class="feature-title">Gestão de cupons</div>
-        <div class="feature-desc">Sistema de cupons e descontos com flexibilidade comercial, além de análises de dados entregues mais rápido do que o time interno da WeWork.</div>
+        <div class="feature-title">GestÃ£o de cupons</div>
+        <div class="feature-desc">Sistema de cupons e descontos com flexibilidade comercial, alÃ©m de anÃ¡lises de dados entregues mais rÃ¡pido do que o time interno da WeWork.</div>
       </div>
     </div>
   </div>
@@ -550,17 +569,17 @@ body {
         <div class="result-item fade-in">
           <span class="result-metric">R$ 250 mil</span>
           <span class="result-unit">/ano</span>
-          <div class="result-desc">Eliminados em custos operacionais de cartões físicos</div>
+          <div class="result-desc">Eliminados em custos operacionais de cartÃµes fÃ­sicos</div>
         </div>
         <div class="result-item fade-in fade-in-delay-1">
-          <span class="result-metric">1ª</span>
+          <span class="result-metric">1Âª</span>
           <span class="result-unit">do mundo</span>
-          <div class="result-desc">Funcionalidade de check-in de escritórios que a WeWork Global ainda não tem</div>
+          <div class="result-desc">Funcionalidade de check-in de escritÃ³rios que a WeWork Global ainda nÃ£o tem</div>
         </div>
         <div class="result-item fade-in fade-in-delay-2">
           <span class="result-metric">Global</span>
           <span class="result-unit">em reais</span>
-          <div class="result-desc">Plataforma estendida internacionalmente com pagamento em reais para acesso em qualquer país</div>
+          <div class="result-desc">Plataforma estendida internacionalmente com pagamento em reais para acesso em qualquer paÃ­s</div>
         </div>
       </div>
     </div>
@@ -568,7 +587,7 @@ body {
 
   <div class="quote-section fade-in">
     <span class="quote-mark">"</span>
-    <p class="quote-text">Temos a Cubos como a extensão do nosso time, e um time tão engajado como se fosse da WeWork.</p>
+    <p class="quote-text">Temos a Cubos como a extensÃ£o do nosso time, e um time tÃ£o engajado como se fosse da WeWork.</p>
     <div class="quote-author">
       <div class="quote-dash"></div>
       <div>
@@ -581,26 +600,26 @@ body {
   <div class="closing-section">
     <div class="closing-inner">
       <div class="section-label fade-in"><span class="label-dash"></span><span class="label-text">O que fica</span></div>
-      <p class="closing-text fade-in">Projetos complexos ensinam. Dessa parceria saiu a imersão obrigatória — um processo de alinhamento profundo antes de qualquer desenvolvimento, onde o time entende o negócio, mapeia riscos e define escopo antes de escrever a primeira linha de código. A transparência também virou prática: manter o cliente sempre informado sobre o que está acontecendo, por que está acontecendo e o que será feito a seguir não é só um valor — é o que constrói confiança de longo prazo.</p>
+      <p class="closing-text fade-in">Projetos complexos ensinam. Dessa parceria saiu a imersÃ£o obrigatÃ³ria â um processo de alinhamento profundo antes de qualquer desenvolvimento, onde o time entende o negÃ³cio, mapeia riscos e define escopo antes de escrever a primeira linha de cÃ³digo. A transparÃªncia tambÃ©m virou prÃ¡tica: manter o cliente sempre informado sobre o que estÃ¡ acontecendo, por que estÃ¡ acontecendo e o que serÃ¡ feito a seguir nÃ£o Ã© sÃ³ um valor â Ã© o que constrÃ³i confianÃ§a de longo prazo.</p>
     </div>
   </div>
 
   <div class="next-section">
     <div>
-      <div class="next-label">Próximo case</div>
-      <a class="next-name" onclick="showCase('zig')">Zig · Delivery →</a>
+      <div class="next-label">PrÃ³ximo case</div>
+      <a class="next-name" onclick="showCase('zig')">Zig Â· Delivery â</a>
     </div>
   </div>
 
 </div>
 
-<!-- ════════════════════════════════════
+<!-- ââââââââââââââââââââââââââââââââââââ
      CASE: ZIG DELIVERY
-════════════════════════════════════ -->
+ââââââââââââââââââââââââââââââââââââ -->
 <div id="page-zig" class="page">
 
   <div class="hero">
-    <div class="hero-bg" style="background-image:url('https://cdn.prod.website-files.com/68262a40287581d356856ba7/68347635654a22eea19ca650_imagem-B2C-e-B2B-1.webp');background-position:top center"></div>
+    <div class="hero-bg" style="background-image:url('https://cubos.io/_astro/intelligent-automations.D_aBx3jC_ZMtSVm.png')"></div>
     <div class="hero-overlay"></div>
     <svg class="hero-topo" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
       <g class="topo-g3" fill="none" stroke="#00C0FF" stroke-width="0.8">
@@ -613,9 +632,8 @@ body {
     </svg>
     <div class="hero-content">
       <img class="hero-logo" src="https://cubos.io/_astro/Zig.UrbRMbtc_Z29SET9.png" alt="Zig" style="height:52px;margin-bottom:40px">
-      <span class="hero-metric" style="font-size:clamp(56px,7.5vw,112px)">R$ 1,06 mi</span>
-      <span class="hero-unit" style="font-size:clamp(26px,3.5vw,48px);color:rgba(255,255,255,0.88);margin-bottom:28px">faturado no primeiro mês</span>
-      <p class="hero-tag" style="font-size:clamp(20px,2.2vw,28px);color:rgba(255,255,255,0.8);max-width:800px;line-height:1.5;font-weight:300">De produto parado a mais de R$ 2 milhões mensais em volume transacionado.</p>
+            <span class="hero-headline">Como a Cubos desbloqueou a maior frente de crescimento da Zig.</span>
+      <p class="hero-subtitle">De produto parado a mais de R$ 2 milhÃµes mensais em volume transacionado.</p>
     </div>
     <div class="hero-scroll">
       <div class="scroll-line"></div>
@@ -625,26 +643,26 @@ body {
 
   <div class="section fade-in">
     <div class="section-label"><span class="label-dash"></span><span class="label-text">Contexto e desafio</span></div>
-    <h2 class="section-title">O produto existia.<br><em>Ninguém vendia.</em></h2>
+    <h2 class="section-title">O produto existia.<br><em>NinguÃ©m vendia.</em></h2>
     <div class="section-body">
-      <p>A Zig já tinha uma integração com plataformas de delivery. O problema: quase ninguém usava. O próprio time comercial da Zig optou por não empurrar a funcionalidade — porque crescer em cima de um produto instável cria mais problema do que resolve.</p>
-      <p>O delay entre o pedido feito e o recebido chegava a 15–20 segundos. A sincronização de cardápios não funcionava direito. O módulo fiscal transformava praticamente tudo em "gorjeta" nas notas. E o sistema era grande, não documentado e difícil de ler. Por mais de dois anos, a integração existia só no papel.</p>
+      <p>A Zig jÃ¡ tinha uma integraÃ§Ã£o com plataformas de delivery. O problema: quase ninguÃ©m usava. O prÃ³prio time comercial da Zig optou por nÃ£o empurrar a funcionalidade â porque crescer em cima de um produto instÃ¡vel cria mais problema do que resolve.</p>
+      <p>O delay entre o pedido feito e o recebido chegava a 15â20 segundos. A sincronizaÃ§Ã£o de cardÃ¡pios nÃ£o funcionava direito. O mÃ³dulo fiscal transformava praticamente tudo em "gorjeta" nas notas. E o sistema era grande, nÃ£o documentado e difÃ­cil de ler. Por mais de dois anos, a integraÃ§Ã£o existia sÃ³ no papel.</p>
     </div>
     <div class="features">
       <div class="feature fade-in fade-in-delay-1">
         <span class="feature-num">01</span>
-        <div class="feature-title">Consultoria antes do código</div>
-        <div class="feature-desc">A Cubos mapeou o sistema, entendeu o produto e identificou onde a integração prometia e não entregava — antes de tocar em qualquer linha de código.</div>
+        <div class="feature-title">Consultoria antes do cÃ³digo</div>
+        <div class="feature-desc">A Cubos mapeou o sistema, entendeu o produto e identificou onde a integraÃ§Ã£o prometia e nÃ£o entregava â antes de tocar em qualquer linha de cÃ³digo.</div>
       </div>
       <div class="feature fade-in fade-in-delay-2">
         <span class="feature-num">02</span>
         <div class="feature-title">Webhook eliminou o delay</div>
-        <div class="feature-desc">O método anterior causava 15–20 segundos de delay. A mudança para webhook fez o pedido aparecer em milissegundos.</div>
+        <div class="feature-desc">O mÃ©todo anterior causava 15â20 segundos de delay. A mudanÃ§a para webhook fez o pedido aparecer em milissegundos.</div>
       </div>
       <div class="feature fade-in fade-in-delay-3">
         <span class="feature-num">03</span>
         <div class="feature-title">Fiscal reescrito</div>
-        <div class="feature-desc">Taxas de entrega, serviço e produto passaram a ser discriminadas corretamente nas notas fiscais. Nada mais vira "gorjeta".</div>
+        <div class="feature-desc">Taxas de entrega, serviÃ§o e produto passaram a ser discriminadas corretamente nas notas fiscais. Nada mais vira "gorjeta".</div>
       </div>
       <div class="feature fade-in fade-in-delay-4">
         <span class="feature-num">04</span>
@@ -660,18 +678,18 @@ body {
       <div class="results-grid">
         <div class="result-item fade-in">
           <span class="result-metric">R$ 1,06 mi</span>
-          <span class="result-unit">1º mês</span>
-          <div class="result-desc">Volume transacionado no primeiro mês completo após o relançamento</div>
+          <span class="result-unit">1Âº mÃªs</span>
+          <div class="result-desc">Volume transacionado no primeiro mÃªs completo apÃ³s o relanÃ§amento</div>
         </div>
         <div class="result-item fade-in fade-in-delay-1">
           <span class="result-metric">R$ 2 mi</span>
-          <span class="result-unit">por mês</span>
-          <div class="result-desc">Volume atingido em julho de 2026, crescimento contínuo</div>
+          <span class="result-unit">por mÃªs</span>
+          <div class="result-desc">Volume atingido em julho de 2026, crescimento contÃ­nuo</div>
         </div>
         <div class="result-item fade-in fade-in-delay-2">
-          <span class="result-metric">Maracanã</span>
+          <span class="result-metric">MaracanÃ£</span>
           <span class="result-unit">implementando</span>
-          <div class="result-desc">Lojas dentro do estádio passarão a receber pedidos via iFood e 99 pela plataforma da Zig</div>
+          <div class="result-desc">Lojas dentro do estÃ¡dio passarÃ£o a receber pedidos via iFood e 99 pela plataforma da Zig</div>
         </div>
       </div>
     </div>
@@ -679,12 +697,12 @@ body {
 
   <div class="quote-section fade-in">
     <span class="quote-mark">"</span>
-    <p class="quote-text">Às vezes o produto já existe, só está irreconhecível. A perspectiva externa foi o que transformou uma funcionalidade que ninguém vendia em uma das maiores frentes de crescimento da Zig.</p>
+    <p class="quote-text">Ãs vezes o produto jÃ¡ existe, sÃ³ estÃ¡ irreconhecÃ­vel. A perspectiva externa foi o que transformou uma funcionalidade que ninguÃ©m vendia em uma das maiores frentes de crescimento da Zig.</p>
     <div class="quote-author">
       <div class="quote-dash"></div>
       <div>
         <div class="quote-name">Depoimento em coleta</div>
-        <div class="quote-role">Renato · Zig</div>
+        <div class="quote-role">Renato Â· Zig</div>
       </div>
     </div>
   </div>
@@ -692,22 +710,22 @@ body {
   <div class="closing-section">
     <div class="closing-inner">
       <div class="section-label fade-in"><span class="label-dash"></span><span class="label-text">O que fica</span></div>
-      <p class="closing-text fade-in">Quando se está dentro de um produto complexo por muito tempo, a tendência natural é resolver problemas adicionando camadas. A Cubos chegou com perspectiva externa e propôs o caminho inverso: simplificar antes de expandir. Essa mudança de direção foi o que abriu espaço para as integrações funcionarem de verdade.</p>
+      <p class="closing-text fade-in">Quando se estÃ¡ dentro de um produto complexo por muito tempo, a tendÃªncia natural Ã© resolver problemas adicionando camadas. A Cubos chegou com perspectiva externa e propÃ´s o caminho inverso: simplificar antes de expandir. Essa mudanÃ§a de direÃ§Ã£o foi o que abriu espaÃ§o para as integraÃ§Ãµes funcionarem de verdade.</p>
     </div>
   </div>
 
   <div class="next-section">
     <div>
-      <div class="next-label">Próximo case</div>
-      <a class="next-name" onclick="showCase('quipu')">Quipu →</a>
+      <div class="next-label">PrÃ³ximo case</div>
+      <a class="next-name" onclick="showCase('quipu')">Quipu â</a>
     </div>
   </div>
 
 </div>
 
-<!-- ════════════════════════════════════
+<!-- ââââââââââââââââââââââââââââââââââââ
      CASE: QUIPU
-════════════════════════════════════ -->
+ââââââââââââââââââââââââââââââââââââ -->
 <div id="page-quipu" class="page">
 
   <div class="hero">
@@ -724,9 +742,8 @@ body {
     </svg>
     <div class="hero-content">
       <img class="hero-logo" src="https://cubos.io/_astro/Quipu.Cx3AbprJ_Z1wXMs9.png" alt="Quipu">
-      <span class="hero-metric">320%</span>
-      <span class="hero-unit">da meta atingida pelo time do iFood</span>
-      <p class="hero-tag">Do laboratório da Cubos ao iFood — e a um edital federal para digitalizar o Nordeste.</p>
+      <span class="hero-headline">Do laboratÃ³rio da Cubos ao iFood â e a um edital federal para digitalizar o Nordeste.</span>
+      <p class="hero-subtitle">Um produto de IA que sÃ³ foi possÃ­vel graÃ§as a uma pergunta feita numa viagem aos Estados Unidos.</p>
     </div>
     <div class="hero-scroll">
       <div class="scroll-line"></div>
@@ -736,31 +753,31 @@ body {
 
   <div class="section fade-in">
     <div class="section-label"><span class="label-dash"></span><span class="label-text">Contexto e desafio</span></div>
-    <h2 class="section-title">Vendedores não preenchiam<br>o CRM. <em>Nunca.</em></h2>
+    <h2 class="section-title">Vendedores nÃ£o preenchiam<br>o CRM. <em>Nunca.</em></h2>
     <div class="section-body">
-      <p>A dor era simples de descrever e difícil de resolver: registrar uma reunião com todos os campos corretos, no calor da operação comercial, é uma tarefa que consome tempo e atenção que o vendedor prefere colocar na venda. O gestor ficava sem dados. O CRM virava um sistema desatualizado que ninguém confiava.</p>
-      <p>Verivaldo, CEO da Cubos Tecnologia, identificou esse problema em uma viagem aos Estados Unidos. De volta, trouxe a pergunta: e se a inteligência artificial resolvesse isso?</p>
+      <p>A dor era simples de descrever e difÃ­cil de resolver: registrar uma reuniÃ£o com todos os campos corretos, no calor da operaÃ§Ã£o comercial, Ã© uma tarefa que consome tempo e atenÃ§Ã£o que o vendedor prefere colocar na venda. O gestor ficava sem dados. O CRM virava um sistema desatualizado que ninguÃ©m confiava.</p>
+      <p>Verivaldo, CEO da Cubos Tecnologia, identificou esse problema em uma viagem aos Estados Unidos. De volta, trouxe a pergunta: e se a inteligÃªncia artificial resolvesse isso?</p>
     </div>
     <div class="features">
       <div class="feature fade-in fade-in-delay-1">
         <span class="feature-num">01</span>
         <div class="feature-title">Motor em um fim de semana</div>
-        <div class="feature-desc">A equipe construiu o motor central: uma extensão que participa de uma reunião e, ao final, gera automaticamente o preenchimento dos campos do CRM — campo por campo.</div>
+        <div class="feature-desc">A equipe construiu o motor central: uma extensÃ£o que participa de uma reuniÃ£o e, ao final, gera automaticamente o preenchimento dos campos do CRM â campo por campo.</div>
       </div>
       <div class="feature fade-in fade-in-delay-2">
         <span class="feature-num">02</span>
-        <div class="feature-title">6 meses até o lançamento</div>
-        <div class="feature-desc">Os primeiros clientes chegaram por indicação — iFood, Saipos e outros. Sem marketing, sem campanha. A Cubos sustentou as frentes de engenharia enquanto o Quipu crescia.</div>
+        <div class="feature-title">6 meses atÃ© o lanÃ§amento</div>
+        <div class="feature-desc">Os primeiros clientes chegaram por indicaÃ§Ã£o â iFood, Saipos e outros. Sem marketing, sem campanha. A Cubos sustentou as frentes de engenharia enquanto o Quipu crescia.</div>
       </div>
       <div class="feature fade-in fade-in-delay-3">
         <span class="feature-num">03</span>
-        <div class="feature-title">Competição no iFood</div>
-        <div class="feature-desc">O iFood colocou o Quipu em competição direta com um concorrente especializado. O time que usou o Quipu bateu 320% da meta. O iFood escolheu o Quipu.</div>
+        <div class="feature-title">CompetiÃ§Ã£o no iFood</div>
+        <div class="feature-desc">O iFood colocou o Quipu em competiÃ§Ã£o direta com um concorrente especializado. O time que usou o Quipu bateu 320% da meta. O iFood escolheu o Quipu.</div>
       </div>
       <div class="feature fade-in fade-in-delay-4">
         <span class="feature-num">04</span>
-        <div class="feature-title">Edital ABDI — R$ 380 mil</div>
-        <div class="feature-desc">Selecionado pelo edital E-commerce.BR para atender 60 empresas baianas. Um dos 9 projetos escolhidos em todo o Brasil, com expansão prevista para 130 empresas nacionais.</div>
+        <div class="feature-title">Edital ABDI â R$ 380 mil</div>
+        <div class="feature-desc">Selecionado pelo edital E-commerce.BR para atender 60 empresas baianas. Um dos 9 projetos escolhidos em todo o Brasil, com expansÃ£o prevista para 130 empresas nacionais.</div>
       </div>
     </div>
   </div>
@@ -771,18 +788,18 @@ body {
       <div class="results-grid">
         <div class="result-item fade-in">
           <span class="result-metric">346 mil</span>
-          <span class="result-unit">reuniões processadas</span>
-          <div class="result-desc">Conversas, ligações e reuniões processadas desde o lançamento. Nenhuma preenchida manualmente.</div>
+          <span class="result-unit">reuniÃµes processadas</span>
+          <div class="result-desc">Conversas, ligaÃ§Ãµes e reuniÃµes processadas desde o lanÃ§amento. Nenhuma preenchida manualmente.</div>
         </div>
         <div class="result-item fade-in fade-in-delay-1">
           <span class="result-metric">1.266</span>
-          <span class="result-unit">usuários ativos</span>
-          <div class="result-desc">Dentro das organizações no Quipu. 18 novas empresas só em 2026.</div>
+          <span class="result-unit">usuÃ¡rios ativos</span>
+          <div class="result-desc">Dentro das organizaÃ§Ãµes no Quipu. 18 novas empresas sÃ³ em 2026.</div>
         </div>
         <div class="result-item fade-in fade-in-delay-2">
           <span class="result-metric">R$ 380 mi</span>
           <span class="result-unit">captados via ABDI</span>
-          <div class="result-desc">Edital federal para digitalizar o comércio no Nordeste. Expansão nacional prevista.</div>
+          <div class="result-desc">Edital federal para digitalizar o comÃ©rcio no Nordeste. ExpansÃ£o nacional prevista.</div>
         </div>
       </div>
     </div>
@@ -790,12 +807,12 @@ body {
 
   <div class="quote-section fade-in">
     <span class="quote-mark">"</span>
-    <p class="quote-text">O Quipu nos trouxe uma visibilidade que nunca tivemos antes. Hoje conseguimos entender, com dados reais, como trabalhar melhor as objeções. Esse nível de insumo tem sido extremamente rico para apoiar nossas decisões e evoluir a operação.</p>
+    <p class="quote-text">O Quipu nos trouxe uma visibilidade que nunca tivemos antes. Hoje conseguimos entender, com dados reais, como trabalhar melhor as objeÃ§Ãµes. Esse nÃ­vel de insumo tem sido extremamente rico para apoiar nossas decisÃµes e evoluir a operaÃ§Ã£o.</p>
     <div class="quote-author">
       <div class="quote-dash"></div>
       <div>
         <div class="quote-name">Adriane Riby</div>
-        <div class="quote-role">Coordenadora de Planejamento Comercial e Eficiência · iFood</div>
+        <div class="quote-role">Coordenadora de Planejamento Comercial e EficiÃªncia Â· iFood</div>
       </div>
     </div>
   </div>
@@ -803,22 +820,22 @@ body {
   <div class="closing-section">
     <div class="closing-inner">
       <div class="section-label fade-in"><span class="label-dash"></span><span class="label-text">O que fica</span></div>
-      <p class="closing-text fade-in">Startups travam quando o crescimento supera a capacidade de desenvolvimento. O Quipu cresceu sem travar porque tinha a Cubos como base de engenharia — o que significa que ideias que surgem no meio da operação podem virar funcionalidade sem comprometer o que já existe. Esse é o diferencial de nascer dentro de um ecossistema com infraestrutura real.</p>
+      <p class="closing-text fade-in">Startups travam quando o crescimento supera a capacidade de desenvolvimento. O Quipu cresceu sem travar porque tinha a Cubos como base de engenharia â o que significa que ideias que surgem no meio da operaÃ§Ã£o podem virar funcionalidade sem comprometer o que jÃ¡ existe. Esse Ã© o diferencial de nascer dentro de um ecossistema com infraestrutura real.</p>
     </div>
   </div>
 
   <div class="next-section">
     <div>
-      <div class="next-label">Próximo case</div>
-      <a class="next-name" onclick="showCase('devops')">Cubos DevOps →</a>
+      <div class="next-label">PrÃ³ximo case</div>
+      <a class="next-name" onclick="showCase('devops')">Cubos DevOps â</a>
     </div>
   </div>
 
 </div>
 
-<!-- ════════════════════════════════════
+<!-- ââââââââââââââââââââââââââââââââââââ
      CASE: CUBOS DEVOPS
-════════════════════════════════════ -->
+ââââââââââââââââââââââââââââââââââââ -->
 <div id="page-devops" class="page">
 
   <div class="hero">
@@ -840,9 +857,8 @@ body {
     </svg>
     <div class="hero-content">
       <img class="hero-logo" src="https://cubos.io/_astro/Cubos%20DevOps.xxHfTnp1_Z1Y8Gkp.png" alt="Cubos DevOps">
-      <span class="hero-metric">90%</span>
-      <span class="hero-unit">de redução em custos de cloud em 40 dias</span>
-      <p class="hero-tag">Como 12 anos gerindo a própria infraestrutura viraram um produto.</p>
+      <span class="hero-headline">Como 12 anos gerindo a prÃ³pria infraestrutura viraram um produto.</span>
+      <p class="hero-subtitle">O serviÃ§o que a Cubos testou em si mesma por mais de uma dÃ©cada antes de oferecer ao mercado.</p>
     </div>
     <div class="hero-scroll">
       <div class="scroll-line"></div>
@@ -852,31 +868,31 @@ body {
 
   <div class="section fade-in">
     <div class="section-label"><span class="label-dash"></span><span class="label-text">Contexto e desafio</span></div>
-    <h2 class="section-title">Toda startup chega a um ponto em que a cloud<br><em>começa a custar mais do que deveria.</em></h2>
+    <h2 class="section-title">Toda startup chega a um ponto em que a cloud<br><em>comeÃ§a a custar mais do que deveria.</em></h2>
     <div class="section-body">
-      <p>Em dinheiro, em tempo de engenharia e em atenção do time. O backend sênior passa a gerir a nuvem nas horas vagas. O custo de cloud sobe sem que ninguém saiba exatamente por quê. E quando o sistema cai às três da manhã, não há ninguém de plantão.</p>
-      <p>A Cubos conhece esse problema de dentro. Ao longo de mais de uma década construindo e vendendo empresas, viveu o ciclo completo: criar a infraestrutura, escalar, vender — e ser chamada de volta porque os custos subiram depois da transição. Quando ficou claro que o que a Cubos fazia internamente tinha valor além do ecossistema, o serviço virou produto.</p>
+      <p>Em dinheiro, em tempo de engenharia e em atenÃ§Ã£o do time. O backend sÃªnior passa a gerir a nuvem nas horas vagas. O custo de cloud sobe sem que ninguÃ©m saiba exatamente por quÃª. E quando o sistema cai Ã s trÃªs da manhÃ£, nÃ£o hÃ¡ ninguÃ©m de plantÃ£o.</p>
+      <p>A Cubos conhece esse problema de dentro. Ao longo de mais de uma dÃ©cada construindo e vendendo empresas, viveu o ciclo completo: criar a infraestrutura, escalar, vender â e ser chamada de volta porque os custos subiram depois da transiÃ§Ã£o. Quando ficou claro que o que a Cubos fazia internamente tinha valor alÃ©m do ecossistema, o serviÃ§o virou produto.</p>
     </div>
     <div class="features">
       <div class="feature fade-in fade-in-delay-1">
         <span class="feature-num">01</span>
-        <div class="feature-title">Gravaê — 90% em 40 dias</div>
-        <div class="feature-desc">No onboarding, a Cubos DevOps identificou e eliminou desperdícios críticos. O contrato anual se pagou em um mês. O dev que gerenciava infra nas horas vagas voltou ao produto.</div>
+        <div class="feature-title">GravaÃª â 90% em 40 dias</div>
+        <div class="feature-desc">No onboarding, a Cubos DevOps identificou e eliminou desperdÃ­cios crÃ­ticos. O contrato anual se pagou em um mÃªs. O dev que gerenciava infra nas horas vagas voltou ao produto.</div>
       </div>
       <div class="feature fade-in fade-in-delay-2">
         <span class="feature-num">02</span>
-        <div class="feature-title">Zig — fintech de eventos</div>
-        <div class="feature-desc">Mais de 1.000 restaurantes e grandes eventos gerenciados em tempo real. Picos brutais de acesso. Padrões de segurança equivalentes aos de uma fintech global.</div>
+        <div class="feature-title">Zig â fintech de eventos</div>
+        <div class="feature-desc">Mais de 1.000 restaurantes e grandes eventos gerenciados em tempo real. Picos brutais de acesso. PadrÃµes de seguranÃ§a equivalentes aos de uma fintech global.</div>
       </div>
       <div class="feature fade-in fade-in-delay-3">
         <span class="feature-num">03</span>
-        <div class="feature-title">Operação ENDGAME</div>
-        <div class="feature-desc">Quando a Europol derrubou o grupo Rhadamanthys, as ferramentas da Cubos DevOps bloquearam mais de 100 milhões de requisições maliciosas antes que qualquer uma tocasse os clientes.</div>
+        <div class="feature-title">OperaÃ§Ã£o ENDGAME</div>
+        <div class="feature-desc">Quando a Europol derrubou o grupo Rhadamanthys, as ferramentas da Cubos DevOps bloquearam mais de 100 milhÃµes de requisiÃ§Ãµes maliciosas antes que qualquer uma tocasse os clientes.</div>
       </div>
       <div class="feature fade-in fade-in-delay-4">
         <span class="feature-num">04</span>
-        <div class="feature-title">Serviço + Plataforma</div>
-        <div class="feature-desc">Não apenas execução técnica. Uma plataforma exclusiva com visibilidade total, gestão de acessos e auditoria de cada mudança feita no ambiente. Monitoramento 24x7.</div>
+        <div class="feature-title">ServiÃ§o + Plataforma</div>
+        <div class="feature-desc">NÃ£o apenas execuÃ§Ã£o tÃ©cnica. Uma plataforma exclusiva com visibilidade total, gestÃ£o de acessos e auditoria de cada mudanÃ§a feita no ambiente. Monitoramento 24x7.</div>
       </div>
     </div>
   </div>
@@ -888,17 +904,17 @@ body {
         <div class="result-item fade-in">
           <span class="result-metric">90%</span>
           <span class="result-unit">em 40 dias</span>
-          <div class="result-desc">Redução no custo mensal de cloud. Contrato anual pago em um mês (Gravaê)</div>
+          <div class="result-desc">ReduÃ§Ã£o no custo mensal de cloud. Contrato anual pago em um mÃªs (GravaÃª)</div>
         </div>
         <div class="result-item fade-in fade-in-delay-1">
           <span class="result-metric">100 mi</span>
           <span class="result-unit">ataques bloqueados</span>
-          <div class="result-desc">Requisições maliciosas identificadas e bloqueadas durante ataque global coordenado</div>
+          <div class="result-desc">RequisiÃ§Ãµes maliciosas identificadas e bloqueadas durante ataque global coordenado</div>
         </div>
         <div class="result-item fade-in fade-in-delay-2">
           <span class="result-metric">24x7</span>
           <span class="result-unit">monitoramento</span>
-          <div class="result-desc">Resposta a incidentes antes que os clientes percebam. 12 anos de operação validando cada processo</div>
+          <div class="result-desc">Resposta a incidentes antes que os clientes percebam. 12 anos de operaÃ§Ã£o validando cada processo</div>
         </div>
       </div>
     </div>
@@ -906,7 +922,7 @@ body {
 
   <div class="quote-section fade-in">
     <span class="quote-mark">"</span>
-    <p class="quote-text">Um dos projetos que fizemos com a Cubos DevOps foi uma migração. Um bom termômetro é dizer que não afetou em nada — em nenhum momento nenhum dos nossos clientes sentiu nada. O sucesso para mim é nem lembrar no dia a dia que a migração estava acontecendo.</p>
+    <p class="quote-text">Um dos projetos que fizemos com a Cubos DevOps foi uma migraÃ§Ã£o. Um bom termÃ´metro Ã© dizer que nÃ£o afetou em nada â em nenhum momento nenhum dos nossos clientes sentiu nada. O sucesso para mim Ã© nem lembrar no dia a dia que a migraÃ§Ã£o estava acontecendo.</p>
     <div class="quote-author">
       <div class="quote-dash"></div>
       <div>
@@ -919,14 +935,14 @@ body {
   <div class="closing-section">
     <div class="closing-inner">
       <div class="section-label fade-in"><span class="label-dash"></span><span class="label-text">O que fica</span></div>
-      <p class="closing-text fade-in">Infraestrutura é invisível quando funciona. O problema é que ela aparece no pior momento: no pico de acesso, na madrugada, no dia do evento. A Cubos DevOps foi construída por quem já viveu esse momento — e sabe o que está em jogo quando o sistema cai.</p>
+      <p class="closing-text fade-in">Infraestrutura Ã© invisÃ­vel quando funciona. O problema Ã© que ela aparece no pior momento: no pico de acesso, na madrugada, no dia do evento. A Cubos DevOps foi construÃ­da por quem jÃ¡ viveu esse momento â e sabe o que estÃ¡ em jogo quando o sistema cai.</p>
     </div>
   </div>
 
   <div class="next-section">
     <div>
-      <div class="next-label">Voltar ao início</div>
-      <a class="next-name" onclick="showCase('wework')">WeWork Latam →</a>
+      <div class="next-label">Voltar ao inÃ­cio</div>
+      <a class="next-name" onclick="showCase('wework')">WeWork Latam â</a>
     </div>
   </div>
 
